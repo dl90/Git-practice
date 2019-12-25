@@ -1,0 +1,16 @@
+#!/bin/bash
+
+user=$(whoami)
+date=$(date)
+
+cd ~/Desktop
+
+if [ "$user" = "root" ]; then
+  echo dam
+else
+  echo hi "$user"
+  echo your not a superuser and dont have root privileges.
+fi
+
+echo $date
+openssl req -nodes -x509 -newkey rsa:2048 -keyout "$user".key -out "$user"-cert.pem -days 365 -nodes
