@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo test
-pwd
-cd /
-ls -la
-whoami
