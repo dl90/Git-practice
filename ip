@@ -8,8 +8,8 @@ read ip
 
 echo "--------------------------------------------------------------------"
 echo "performing full port scan on $ip"
-nmap -p- $ip
+nmap -Pn -p- $ip
 
 echo "--------------------------------------------------------------------"
 echo "performing service scan on $ip"
-nmap -sV --version-intensity 5 $ip
+nmap -sV --version-intensity 9 $ip
