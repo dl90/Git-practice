@@ -1,0 +1,36 @@
+{
+  "name": "Git-practice",
+  "version": "1.0.0",
+  "description": "This first quote by [Heinrich Heine](https://www.brainyquote.com/authors/heinrich-heine-quotes) frames the notion of experience as a double edged sword: > Experience is a good school. But the fees are high.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dl90/Git-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dl90/Git-practice/issues"
+  },
+  "homepage": "https://github.com/dl90/Git-practice#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
