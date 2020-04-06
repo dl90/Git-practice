@@ -6,5 +6,5 @@ du -h
 ```
 
 ```bash
-git stash pop
+git stash
 ```
