@@ -20,5 +20,3 @@ git log --graph --full-history --all --color \
 git blame <filename>
 git log <commit hash> -p
 ```
-
-testingaaaa
